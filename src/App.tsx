@@ -15,7 +15,7 @@ import { IMG } from './images';
 import { FAQS, TESTIMONIALS, PRODUCT } from './copy';
 import { useReveal } from './useReveal';
 
-const OFFER_PRICE = 'R$ 27';
+const OFFER_PRICE = 'R$ 37';
 const OFFER_OLD = 'de R$ 197 por apenas';
 const CHECKOUT_URL = '#checkout';
 
