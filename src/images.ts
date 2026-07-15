@@ -9,7 +9,7 @@ export const IMG = {
   womanRed:
     'https://images.pexels.com/photos/19911694/pexels-photo-19911694.jpeg?auto=compress&cs=tinysrgb&w=1400',
   womanBlackDress:
-    'https://images.pexels.com/photos/33185676/pexels-photo-33185676.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    'https://images.pexels.com/photos/5910797/pexels-photo-5910797.jpeg?auto=compress&cs=tinysrgb&w=1400',
   womanStrapless:
     'https://images.pexels.com/photos/20891184/pexels-photo-20891184/free-photo-of-model-in-strapless-dress-in-city-at-night.jpeg?auto=compress&cs=tinysrgb&w=1400',
   womanBokeh:
