@@ -17,7 +17,7 @@ import { useReveal } from './useReveal';
 
 const OFFER_PRICE = 'R$ 37';
 const OFFER_OLD = 'de R$ 197 por apenas';
-const CHECKOUT_URL = '#checkout';
+const CHECKOUT_URL = 'https://pay.cakto.com.br/morrdap_983509';
 
 function CTAButton({
   label = 'QUERO ATIVAR MINHA AURA PREDADORA AGORA',
