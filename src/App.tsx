@@ -653,7 +653,7 @@ function App() {
           </div>
 
           <div className="mt-8 flex justify-center">
-            <CTAButton label="QUERO ATIVAR MINHA AURA PREDADORA AGORA" sub="R$ 27 · acesso imediato · garantia de 30 dias" />
+            <CTAButton label="QUERO ATIVAR MINHA AURA PREDADORA AGORA" sub="R$ 37 · acesso imediato · garantia de 30 dias" />
           </div>
         </div>
       </section>
