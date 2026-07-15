@@ -136,7 +136,7 @@ function App() {
 
         <div className="relative z-10 mx-auto flex min-h-[92vh] max-w-3xl flex-col items-center justify-center px-5 py-20 text-center">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-gold">
-            <Flame className="h-3.5 w-3.5" /> Advertorial — leia antes que saia do ar
+            <Flame className="h-3.5 w-3.5" /> Importante — leia antes que saia do ar
           </span>
 
           <h1 className="font-serif text-4xl font-bold leading-[1.08] text-balance sm:text-6xl lg:text-7xl">
