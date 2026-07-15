@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0a0a0b;
+    --bg-soft: #121214;
+    --ink: #f5f3ef;
+    --gold: #c8a35c;
+    --gold-bright: #e6c178;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-gold {
+    color: var(--gold);
+  }
+  .bg-gold {
+    background-color: var(--gold);
+  }
+  .border-gold {
+    border-color: var(--gold);
+  }
+
+  .prose-sales {
+    font-size: 1.175rem;
+    line-height: 1.85;
+    color: #d6d2c9;
+  }
+  .prose-sales p {
+    margin-bottom: 1.5rem;
+  }
+  .prose-sales strong {
+    color: #f5f3ef;
+    font-weight: 700;
+  }
+  .prose-sales em {
+    color: var(--gold-bright);
+    font-style: italic;
+  }
+}
+
+/* Gold gradient text */
+.gold-text {
+  background: linear-gradient(135deg, #e6c178 0%, #c8a35c 45%, #9a7a3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle grain overlay */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pulsing CTA */
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(230, 193, 120, 0.45), 0 14px 40px -8px rgba(230,193,120,0.5); }
+  50% { box-shadow: 0 0 0 16px rgba(230, 193, 120, 0), 0 14px 40px -8px rgba(230,193,120,0.6); }
+}
+.cta-pulse {
+  animation: ctaPulse 2.4s ease-in-out infinite;
+}
+
+/* Slow zoom for hero image */
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.12); }
+}
+.slow-zoom {
+  animation: slowZoom 18s ease-in-out infinite alternate;
+}
+
+/* Marquee for social proof bar */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+/* Blinking urgency dot */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.blink {
+  animation: blink 1.3s ease-in-out infinite;
+}
+
+/* Falling fade for highlights */
+@keyframes shimmerLine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-line {
+  background: linear-gradient(90deg, transparent, rgba(230,193,120,0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmerLine 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .cta-pulse, .slow-zoom, .marquee-track, .blink, .shimmer-line { animation: none; }
+}
