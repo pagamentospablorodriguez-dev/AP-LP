@@ -226,8 +226,7 @@ function App() {
                 escolheu olhar. Ela foi obrigada a olhar.</strong>
               </p>
               <p>
-                É por isso que você vê caras feios, baixos, carecas, sem grana, cercados de mulheres. E caras
-               -modelo, sozinhos no canto do bar. A energia vence a estética. <strong>Sempre.</strong>
+                É por isso que você vê caras feios, baixos, carecas, sem grana, cercados de mulheres. E caras-modelo, sozinhos no canto do bar. A energia vence a estética. <strong>Sempre.</strong>
               </p>
             </div>
           </div>
