@@ -277,7 +277,7 @@ function App() {
             cara "interessante" receber toda a atenção enquanto você segura a parede.
           </p>
           <p>
-            O pior não é a mulher não olhar. O pior é você <strong>deixar de se olhar</strong>. Começa a duvidar
+            O pior não é a mulher não olhar. O pior é você <strong>deixar de se olhar</strong>. Começar a duvidar
             de si. A achar que tem algo errado. Que você é o problema. Que talvez você não nasceu pra isso.
           </p>
           <p>
