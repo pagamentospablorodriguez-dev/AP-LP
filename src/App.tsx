@@ -971,7 +971,7 @@ function App() {
             
           /> <img
             src={/Paimon.png}
-            alt="Lord Lucifer"
+            alt="King Paimon"
             
           />
       </footer>
