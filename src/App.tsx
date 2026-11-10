@@ -829,7 +829,7 @@ function App() {
                     <Shield className="h-3.5 w-3.5 text-gold" /> 30 dias de garantia
                   </span>
                   <span className="flex items-center gap-1">
-                    <Check className="h-3.5 w-3.5 text-gold" /> Pix, cartão e boleto
+                    <Check className="h-3.5 w-3.5 text-gold" /> Pix
                   </span>
                 </div>
               </div>
