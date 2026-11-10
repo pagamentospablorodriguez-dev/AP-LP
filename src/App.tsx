@@ -966,11 +966,11 @@ function App() {
           </div>
         </div>
         <img
-            src={/Lucifer.png}
+            src={'/Lucifer.png'}
             alt="Lord Lucifer"
             
           /> <img
-            src={/Paimon.png}
+            src={'/Paimon.png'}
             alt="King Paimon"
             
           />
