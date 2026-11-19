@@ -965,15 +965,7 @@ function App() {
             <span>© {new Date().getFullYear()} {PRODUCT}. Todos os direitos reservados.</span>
           </div>
         
-        <img
-            src={'/Lucifer.png'}
-            alt="Lord Lucifer"
-            
-          /> <img
-            src={'/Paimon.png'}
-            alt="King Paimon"
-            
-          />
+       
 
           </div>
       </footer>
